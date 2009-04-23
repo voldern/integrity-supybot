@@ -4,7 +4,7 @@ require 'mysql'
 
 module Integrity
   class Notifier
-    class IntegrityIRC < Notifier::Base
+    class IntegritySupybot < Notifier::Base
 
       def self.to_haml
         File.read File.dirname(__FILE__) / "config.haml"

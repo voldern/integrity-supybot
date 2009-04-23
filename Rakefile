@@ -2,8 +2,8 @@ require 'rubygems'
 require 'rake'
 require 'echoe'
 
-Echoe.new('integrity-irc', '0.1') do |e|
-  e.summary         = "IRC notifier for the Integrity continuous integration server"
+Echoe.new('integrity-supybot', '0.1') do |e|
+  e.summary         = "Supybot IRC notifier for the Integrity continuous integration server"
   e.description     = "Easily let Integrity message IRC after each build"
   e.url             = "http://integrityapp.com"
   e.author          = "Espen Volden"
