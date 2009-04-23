@@ -1,7 +1,19 @@
 %p.normal
-  %label{ :for => "integrity_twitter_notifier_email" } Email Address
-  %input.text#integrity_twitter_notifier_email{ :name => "notifiers[IntegrityTwitter][email]", :value => config["email"], :type => "text" }
- 
+  %label{ :for => "integrity_supybot_notifier_host" } MySQL Hostname
+  %input.text#integrity_supybot_notifier_host{ :name => "notifiers[IntegritySupybot][host]", :value => config["host"], :type => "text" }
+
 %p.normal
-  %label{ :for => "integrity_twitter_notifier_pass" } Password
-  %input.text#integrity_twitter_notifier_pass{ :name => "notifiers[IntegrityTwitter][pass]", :value => config["pass"], :type => "text" }
+  %label{ :for => "integrity_supybot_notifier_user" } MySQL Username
+  %input.text#integrity_supybot_notifier_user{ :name => "notifiers[IntegritySupybot][user]", :value => config["user"], :type => "text" }
+
+%p.normal
+  %label{ :for => "integrity_supybot_notifier_pass" } MySQL Password
+  %input.text#integrity_supybot_notifier_pass{ :name => "notifiers[IntegritySupybot][pass]", :value => config["pass"], :type => "text" }
+
+%p.normal
+  %label{ :for => "integrity_supybot_notifier_db" } MySQL Database
+  %input.text#integrity_supybot_notifier_db{ :name => "notifiers[IntegritySupybot][db]", :value => config["db"], :type => "text" }
+
+%p.normal
+  %label{ :for => "integrity_supybot_notifier_name" } Notice name
+  %input.text#integrity_supybot_notifier_name{ :name => "notifiers[IntegritySupybot][name]", :value => config["name"], :type => "text" }

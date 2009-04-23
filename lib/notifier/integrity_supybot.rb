@@ -11,7 +11,7 @@ module Integrity
       end
 
       def deliver!
-        my = Mysql.new(@config['host'], @config['user'], @config['pass'], 'supybot')
+        my = Mysql.new(@config['host'], @config['user'], @config['pass'], @config['db'])
         st = my.prepare('INSERT INTO message_queue SET user = ?, created = NOW(), message= ?')
         st.execute(@config['name'], short_message)
         st.close
