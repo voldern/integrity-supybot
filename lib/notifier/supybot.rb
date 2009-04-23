@@ -12,7 +12,8 @@ module Integrity
 
       def deliver!
         my = Mysql.new(@config['host'], @config['user'], @config['pass'], @config['db'])
-        st = my.prepare('INSERT INTO message_queue SET user = ?, created = NOW(), message= ?')
+        st = my.prepare('INSERT INTO message_queue SET user = ?, created = ' +
+                        'NOW(), message= ?')
         st.execute(@config['name'], irc_message)
         st.close
         my.close
