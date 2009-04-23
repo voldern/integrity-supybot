@@ -21,7 +21,11 @@ module Integrity
       private
 
       def irc_message
-        "#{build.project.name}: #{short_message}"
+        if build.successful?
+          "#{build.project.name}: #{short_message} :)"
+        else
+          "[1;31m#{build.project.name}: #{short_message}[0m :(("
+        end
       end
 
     end
