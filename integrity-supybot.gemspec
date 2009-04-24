@@ -6,11 +6,11 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 1.2") if s.respond_to? :required_rubygems_version=
   s.authors = ["Espen Volden"]
-  s.date = %q{2009-04-23}
+  s.date = %q{2009-04-24}
   s.description = %q{Easily let Integrity message IRC after each build}
   s.email = %q{voldern@hoeggen.net}
-  s.extra_rdoc_files = ["lib/notifier/config.haml", "lib/notifier/integrity_supybot.rb", "README"]
-  s.files = ["lib/notifier/config.haml", "lib/notifier/integrity_supybot.rb", "Rakefile", "Manifest", "README", "integrity-supybot.gemspec"]
+  s.extra_rdoc_files = ["lib/notifier/config.haml", "lib/notifier/supybot.rb", "README"]
+  s.files = ["lib/notifier/config.haml", "lib/notifier/supybot.rb", "Rakefile", "Manifest", "README", "integrity-supybot.gemspec"]
   s.homepage = %q{http://integrityapp.com}
   s.rdoc_options = ["--line-numbers", "--inline-source", "--title", "Integrity-supybot", "--main", "README"]
   s.require_paths = ["lib"]
